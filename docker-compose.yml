@@ -1,0 +1,8 @@
+version: '3.1'
+
+services:
+  # A query engine which makes the self-hosted data sets used for the examples and docs available.
+  postgres_sample_db:
+    image: ghcr.io/vizzly-co/postgres-db:latest
+    ports:
+      - 6000:5432
